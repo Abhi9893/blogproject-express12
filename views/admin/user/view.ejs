@@ -9,12 +9,12 @@
                 <div class="container-fluid">
                     <div class="row mb-2">
                         <div class="col-sm-6">
-                            <h1 class="m-0">user view</h1>
+                            <h1 class="m-0">Users Display</h1>
                         </div><!-- /.col -->
                         <div class="col-sm-6">
                             <ol class="breadcrumb float-sm-right">
                                 <li class="breadcrumb-item"><a href="#">Home</a></li>
-                                <li class="breadcrumb-item active">user View</li>
+                                <li class="breadcrumb-item active">User Page</li>
                             </ol>
                         </div><!-- /.col -->
                     </div><!-- /.row -->
@@ -26,11 +26,11 @@
             <div class="content">
                 <div class="container-fluid">
 
-                    <!-- /.card -->
+
 
                     <div class="card">
                         <div class="card-header">
-                            
+
                         </div>
                         <!-- /.card-header -->
                         <div class="card-body">
@@ -39,23 +39,25 @@
                                     <tr>
                                         <th>Id</th>
                                         <th>Name</th>
-                                        
+                                        <th>Email</th>
+                                        <th>Phone</th>
+                                        <th>Status</th>
+                                        <th></th>
+                                        <th>Action</th>
                                     </tr>
                                 </thead>
-                                   
+                               
                                     <tr>
-                                        <td><%= v.status %></td>
-                                        <td><%= v.name %></td>
-                                        
+                                
                                     </tr>
                                    
-                                <tfoot>
-                                    <tr>
-                                        <th>STATUS</th>
-                                        <th>Name</th>
-                                        
-                                    </tr>
-                                </tfoot>
+                                        <tfoot>
+                                            <tr>
+                                                <th>Id</th>
+                                                <th>Name</th>
+                                                <th>Action</th>
+                                            </tr>
+                                        </tfoot>
                             </table>
                         </div>
                         <!-- /.card-body -->
@@ -67,7 +69,8 @@
             <!-- /.content -->
         </div>
         <!-- /.content-wrapper -->
-<!-- category modal -->
-       
+        <!-- category modal -->
+
+        <!-- /.modal -->
 
         <%-include("../footer.ejs") %>
